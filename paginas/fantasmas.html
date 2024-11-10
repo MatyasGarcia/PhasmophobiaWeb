@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -248,4 +249,257 @@
 </div>
 <script src="./js/lightbox-plus-jquery.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmophobia</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Condensed:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="BarraNavegacionSup">
+        <ul class="Barrasuperior">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./similares.html" target="_blank">Similares</a></li>
+            <li><a href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">En Steam</a></li>
+            <li><a href="./requisitos.html">Requisitos</a></li>
+            <li><a href="./comentarios.html">Comentarios</a></li>
+        </ul>
+    </nav>
+<Header class="Titulo">PHASMOPHOBIA</Header>
+<section>
+    <div>
+        <ul class="ListaFantasmas">
+            <li><a href="fantasmas.php?nom=Espiritu">Espiritu</a></li>
+            <li><a href="fantasmas.php?nom=Espectro">Espectro</a></li>
+            <li><a href="fantasmas.php?nom=Ente">Ente</a></li>
+            <li><a href="fantasmas.php?nom=Poltergeist">Poltergeist</a></li>
+            <li><a href="fantasmas.php?nom=Banshee">Banshee</a></li>
+            <li><a href="fantasmas.php?nom=Jinn">Jinn</a></li>
+            <li><a href="fantasmas.php?nom=Pesadilla">Pesadilla</a></li>
+            <li><a href="fantasmas.php?nom=Revenant">Revenant</a></li>
+            <li><a href="fantasmas.php?nom=Sombra">Sombra</a></li>
+            <li><a href="fantasmas.php?nom=Demonio">Demonio</a></li>
+            <li><a href="fantasmas.php?nom=Yurei">Yurei</a></li>
+            <li><a href="fantasmas.php?nom=Oni">Oni</a></li>
+            <li><a href="fantasmas.php?nom=Yokai">Yokai</a></li>
+            <li><a href="fantasmas.php?nom=Hantu">Hantu</a></li>
+            <li><a href="fantasmas.php?nom=Goryo">Goryo</a></li>
+            <li><a href="fantasmas.php?nom=Myling">Myling</a></li>
+            <li><a href="fantasmas.php?nom=Onryo">Onryo</a></li>
+            <li><a href="fantasmas.php?nom=Gemelos">Gemelos</a></li>
+            <li><a href="fantasmas.php?nom=Raiju">Raiju</a></li>
+            <li><a href="fantasmas.php?nom=Obake">Obake</a></li>
+            <li><a href="fantasmas.php?nom=Mimico">Mimico</a></li>
+            <li><a href="fantasmas.php?nom=Moroi">Moroi</a></li>
+            <li><a href="fantasmas.php?nom=Deogen">Deogen</a></li>
+            <li><a href="fantasmas.php?nom=Thaye">Thaye</a></li>
+        </ul>
+    </div>
+    <?php
+        $descripcion = '';
+        $fortaleza = '';
+        $debilidad = '';
+        if (isset($_GET['nom'])){
+            switch (($_GET['nom'])){
+                case 'Espiritu' :
+                $descripcion = 'Los espíritus son fantasmas muy comunes. Son muy poderosos, pero pasivos, solo atacan cuando es necesario.';
+                $fortaleza = 'Fortaleza: Desconocida.';
+                $debilidad = 'Debilidad: Utilizar incienso cerca de ellos los parará temporalmente.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Espectro' :
+                $descripcion = 'Un espectro es un tipo de fantasma de lo más peligroso que puedes hallar. También es el único tipo de fantasma que puede volar y en ocasiones atravesar paredes.';
+                $fortaleza = 'Fortaleza: Casi nunca tocan el suelo, por lo que no dejan pisadas.';
+                $debilidad = 'Debilidad: Repudian la sal y la evitan a toda costa.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Ente' :
+                    $descripcion = 'Un ente es un fantasma que puede poseer a los vivos, induciendo el miedo a quienes le rodean. Son comunmente invocados a través de la Ouija.';
+                    $fortaleza = 'Fortaleza: Al mirarlo directamente mermará tu cordura considerablemente rápido.';
+                    $debilidad = 'Debilidad: Al sacarle una foto desaparecerá temporalmente.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Poltergeist' :
+                    $descripcion = 'Uno de los fantasmas más famosos: el poltergeist. Conocido por manipular objetos a su alrededor para propagar el miedo en sus victimas.';
+                    $fortaleza = 'Fortaleza: Puede lanzar con gran fuerza múltiples objetos a la vez.';
+                    $debilidad = 'Debilidad: Su poder no sive de nada si no tiene objetos que lanzar.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Banshee' :
+                    $descripcion = 'Conocida como "la sirena cantora", llamada así por atraer a sus víctimas a través de sus cánticos. Distinguida por aislar a su presa antes de asestarle un golpe fatal.';
+                    $fortaleza = 'Fortaleza: Debilitará a su objetivo antes de atacar.';
+                    $debilidad = 'Debilidad: En ocasiones, la podrás escuchar gritar a través del micrófono parabólico.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Jinn' :
+                    $descripcion = 'Un jinn es un fantasma territorial que atacará cuando se sienta amenazado. También se le conoce por desplazarse significativamente rápido.';
+                    $fortaleza = 'Fortaleza: Acelerará su velocidad si su víctima está lejos de él.';
+                    $debilidad = 'Debilidad: Apagar el cuadro eléctrico evitará que pueda usar sus habilidades.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Pesadilla' :
+                    $descripcion = 'Una pesadilla es la fuente de tus peores sueños, haciéndola así muy poderosa en la oscuridad.';
+                    $fortaleza = 'Fortaleza: Podrá atacar muy frecuentemente si está todo a oscuras.';
+                    $debilidad = 'Debilidad: Encender las luces cerca de ella reducirá sus posibilidades de atacar.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Revenant' :
+                    $descripcion = 'Un revenant es un fantasma violento que atacará indiscriminadamente. Su velocidad puede ser engañosa, ya que son lentos mientras están inactivos, sin embargo, tan pronto como cazan pueden moverse increiblemente rápido.';
+                    $fortaleza = 'Fortaleza: Viajará a una velocidad significativamente rápida cuando ataque a su presa.';
+                    $debilidad = 'Debilidad: Esconderse de él hará que se mueva muy lentamente.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Sombra' :
+                    $descripcion = 'Una sombra es conocida por ser muy tímida. Existe evidencia que confirma que una sombra detendrá su actividad paranormal si hay gente cerca.';
+                    $fortaleza = 'Fortaleza: Son difíciles de encontrar.';
+                    $debilidad = 'Debilidad: No atacará si hay varias personas cerca.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Demonio' :
+                    $descripcion = 'Los demonios son los fantasmas más agresivos que hemos encontrado. Atacan sin razón, y parecen disfrutar de la emoción de la caza.';
+                    $fortaleza = 'Fortaleza: Iniciarán ataques más a menudo que otros fantasmas.';
+                    $debilidad = 'Debilidad: Temen a los crucifijos y serán menos agresivos al estar cerca de uno.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Yurei' :
+                    $descripcion = 'Un yurei es un tipo de fantasma que ha vuelto al plano físico, normalmente para cobrarse una venganza o manifestar su odio.';
+                    $fortaleza = 'Fortaleza: Se dice que tienen una gran influencia en la cordura de las personas.';
+                    $debilidad = 'Debilidad: Utilizar incienso en su habitación lo atrapará ahí temporalmente, reduciendo la frecuencia con la que deambula.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Oni' :
+                    $descripcion = 'Los oni adoran asustar a sus víctimas tanto como sea posible antes de atacar. Suelen ser vistos en su forma física cerca del lugar donde murieron.';
+                    $fortaleza = 'Fortaleza: Son más activos cuando hay varias personas cerca y mermarán tu cordura mas rápidamente al manifestarse.';
+                    $debilidad = 'Debilidad: Al atacar a su presa, desaparecen con menos frecuencia.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Yokai' :
+                    $descripcion = 'Los yokai son fantasmas comunes que se sienten atraidos por las voces humanas. Se les puede encontrar atormentando casas familiares.';
+                    $fortaleza = 'Fortaleza: Hablar cerca de él lo enfadará incrementando las probabilidades de que ataque.';
+                    $debilidad = 'Debilidad: Cuando está atacando solo puede oír voces en sus proximidades.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Hantu' :
+                    $descripcion = 'Un hantu es un tipo de fantasma raro que se puede encontrar en los climas más frios. El frio parece conferirles más agresividad y un aumento de poder.';
+                    $fortaleza = 'Fortaleza: Se desplaza más rápido si hay temperaturas bajas.';
+                    $debilidad = 'Debilidad: Se mueve mas despacio en zonas con temperaturas calientes.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Goryo' :
+                    $descripcion = 'Cuando un goryo pasa a través de un proyector D.O.T.S., solo una cámara de video podrá verlo.';
+                    $fortaleza = 'Fortaleza: Solo se mostrará ante la cámara de vídeo si no hay nadie cerca.';
+                    $debilidad = 'Debilidad: Rara vez se les ve lejos del lugar donde murieron.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Myling' :
+                    $descripcion = 'Un myling es un fántasma muy activo y sonoro. Se rumorea que es silencioso cuando ataca a sus presas.';
+                    $fortaleza = 'Fortaleza: Cuando ataca, suele ser sigiloso.';
+                    $debilidad = 'Debilidad: Hacen ruido paranormal más frecuentemente.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Onryo' :
+                    $descripcion = 'El onryo suele ser conocido como "el espiritu furioso". Roba las almas de los cuerpos de sus victimas en busqueda de venganza. Se conoce que este fantasma teme a cualquier tipo de fuego, y hará lo imposible para estar lejos de él.';
+                    $fortaleza = 'Fortaleza: Apagar una llama puede provocar que el onryo ataque.';
+                    $debilidad = 'Debilidad: Si se siente amenazado, atacará con menos frecuencia.';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Gemelos' :
+                    $descripcion = '.';
+                    $fortaleza = 'Fortaleza: .';
+                    $debilidad = 'Debilidad: .';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Raiju' :
+                    $descripcion = '.';
+                    $fortaleza = 'Fortaleza: .';
+                    $debilidad = 'Debilidad: .';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Obake' :
+                    $descripcion = '.';
+                    $fortaleza = 'Fortaleza: .';
+                    $debilidad = 'Debilidad: .';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Mimico' :
+                    $descripcion = '.';
+                    $fortaleza = 'Fortaleza: .';
+                    $debilidad = 'Debilidad: .';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Moroi' :
+                    $descripcion = '.';
+                    $fortaleza = 'Fortaleza: .';
+                    $debilidad = 'Debilidad: .';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Deogen' :
+                    $descripcion = '.';
+                    $fortaleza = 'Fortaleza: .';
+                    $debilidad = 'Debilidad: .';
+                break;
+            }
+            switch (($_GET['nom'])){
+                case 'Thaye' :
+                    $descripcion = '.';
+                    $fortaleza = 'Fortaleza: .';
+                    $debilidad = 'Debilidad: .';
+                break;
+            }
+        }
+    ?>
+    <div class="DescripcionFantasmas">
+        <h2 class="D1"> <?php echo $descripcion; ?> </h2>
+        <h3 class="D2"> <?php echo $fortaleza; ?></h3>
+        <h4 class="D3"> <?php echo $debilidad; ?> </h4>
+    </div>
+</section>
+<p class="Descripcion">Seccion en la que se va a escribir informacion de los fantasmas del juego con un menu desplegable al presionar en cada uno de los nombres</p>
+<h3 class="Buscador">
+    <ul>
+        <nav>
+            <li><a href="objetos.html">Objetos</a></li>
+            <li><a href="mapas.html">Mapas</a></li>
+            <li><a href="notasdelparche.html">Notas del Parche</a></li>
+            <li><a href="guias.html">Guias</a></li>
+        </nav>
+    </ul>
+</h3>
+<h4 class="Subtitulo">Suerte en la caceria</h4>
+<footer>
+    <div class="Button">
+        <a href="#BarraNavegacionSup" class="Boton">Ir Arriba</a>
+    </div>
+</footer>
+</body>
+>>>>>>> adeb664 (primer ronda de cambios)
 </html>
