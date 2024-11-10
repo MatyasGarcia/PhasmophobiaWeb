@@ -1,0 +1,72 @@
+<<<<<<< HEAD
+Halloween Event | Update v0.9.1.0
+Welcome back ghost hunters, we've got some news for you.
+Halloween
+Halloween Event 2023 has been added, instructions can be found in-game on how to receive this year's spooky ID-card badge and trophy! The event will last around 2 weeks!
+Maple and Prison are temporarily unlocked at level 1 to allow new players to complete the event
+New
+Maple Lodge Campsite has had a complete layout revamp, featuring a new reception building, two separate campsite areas, new assets and areas, more hiding spots and greatly improved performance
+Added new rain sounds in both campsites when inside tents, inside the toilet block or under draped tarp
+Added Temporal Anti-Aliasing option in the journal (Provides a higher quality AA method than FXAA and SMAA, but lower quality than MSAA)
+The EULA has been updated (2.2, 7.1, 7.2 and 10.4)
+Changes
+Several icons have been replaced across the main menu and contract selection screens
+You can no longer light objects using 'Interact' (default: Mouse 1)
+To help with performance in the truck, the CCTV monitor will now only turn on when you are standing nearby, and it will now display a screensaver when disabled
+Fixes
+The Monkey Paw now has the correct textures again
+You can now take a photo of the haunted mirror on Ridgeview, whilst it is on the wall
+In Training, you can now open/close the truck doors in VR
+Several fingerprints are no longer visible when you don’t have UV evidence
+Crucifix T2 should now consistently give both “interaction” and “burned crucifix” photos
+The haunted mirror will no longer get detected on the parabolic microphone or sound sensors if not being held or used
+The Camp Woodwind entrance gate will no longer say “Maple Lodge campsite”
+Video cam no longer breaks if swapped into inventory when CCTV is on the last camera
+Lighters can no longer light some candles, firelights and the campfire when not lit
+Summoning circle photos will no longer take priority over other photos as often
+If you die in foggy weather, future games in foggy weather now show the fog correctly
+Many performance improvements, especially in multiplayer and in the truck
+Placing equipment on the wall in some areas of Sunny Meadows will no longer teleport the equipment back to the truck
+Bone photos will now work more reliably
+Firelight T2 now correctly lasts 5 minutes instead of 3 minutes
+Known Issues
+The in-game version number will show as 0.9.0.11
+Terrain is currently showing inside Sunny Meadows
+Ghost footstep sounds are currently sometimes incorrect in Maple Campsite
+=======
+Halloween Event | Update v0.9.1.0
+Welcome back ghost hunters, we've got some news for you.
+Halloween
+Halloween Event 2023 has been added, instructions can be found in-game on how to receive this year's spooky ID-card badge and trophy! The event will last around 2 weeks!
+Maple and Prison are temporarily unlocked at level 1 to allow new players to complete the event
+New
+Maple Lodge Campsite has had a complete layout revamp, featuring a new reception building, two separate campsite areas, new assets and areas, more hiding spots and greatly improved performance
+Added new rain sounds in both campsites when inside tents, inside the toilet block or under draped tarp
+Added Temporal Anti-Aliasing option in the journal (Provides a higher quality AA method than FXAA and SMAA, but lower quality than MSAA)
+The EULA has been updated (2.2, 7.1, 7.2 and 10.4)
+Changes
+Several icons have been replaced across the main menu and contract selection screens
+You can no longer light objects using 'Interact' (default: Mouse 1)
+To help with performance in the truck, the CCTV monitor will now only turn on when you are standing nearby, and it will now display a screensaver when disabled
+Fixes
+The Monkey Paw now has the correct textures again
+You can now take a photo of the haunted mirror on Ridgeview, whilst it is on the wall
+In Training, you can now open/close the truck doors in VR
+Several fingerprints are no longer visible when you don’t have UV evidence
+Crucifix T2 should now consistently give both “interaction” and “burned crucifix” photos
+The haunted mirror will no longer get detected on the parabolic microphone or sound sensors if not being held or used
+The Camp Woodwind entrance gate will no longer say “Maple Lodge campsite”
+Video cam no longer breaks if swapped into inventory when CCTV is on the last camera
+Lighters can no longer light some candles, firelights and the campfire when not lit
+Summoning circle photos will no longer take priority over other photos as often
+If you die in foggy weather, future games in foggy weather now show the fog correctly
+Many performance improvements, especially in multiplayer and in the truck
+Placing equipment on the wall in some areas of Sunny Meadows will no longer teleport the equipment back to the truck
+Bone photos will now work more reliably
+Firelight T2 now correctly lasts 5 minutes instead of 3 minutes
+Known Issues
+The in-game version number will show as 0.9.0.11
+Terrain is currently showing inside Sunny Meadows
+Ghost footstep sounds are currently sometimes incorrect in Maple Campsite
+>>>>>>> adeb664 (primer ronda de cambios)
+The bear trap interaction photo does not work
