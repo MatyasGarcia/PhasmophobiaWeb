@@ -6,9 +6,12 @@
 html{
     font-size: 20px;
 }
-body{
+body {
     font-family: 'Cutive Mono', monospace;
     background-image: url(../img/Asylum+outside.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     margin-left: auto;
     margin-right: auto;
 }
