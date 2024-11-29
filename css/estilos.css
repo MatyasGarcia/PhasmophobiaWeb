@@ -8,7 +8,7 @@ html{
 }
 body {
     font-family: 'Cutive Mono', monospace;
-    background-image: url(../img/PhasmoFondo.jpg);
+    background-image: url(../img/FondoPhasmo.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -104,7 +104,7 @@ a{
     font-size: 60px;
     list-style-type: none;
 }
-.DescripcionFantasmas{
+.DescripcionFantasmas, .DescripcionFantasmas h2, .DescripcionFantasmas h3, .DescripcionFantasmas h4{
     padding: 2rem;
     color: aliceblue;
     text-align: center;
@@ -147,11 +147,6 @@ a{
     box-shadow: 5px 5px 5px rgb(66, 65, 65);
     margin: 5px;
 }
-/*.D1, .D2, .D3{
-    padding: 1rem;
-    color: aliceblue;
-    text-align: center;
-}*/
 .Button{
     text-align: center;
 }
@@ -164,6 +159,20 @@ a{
     width: 30%;
     height: auto;
     padding: 0.5rem;
+}
+.BotonObjetos{
+    color: aliceblue;
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgb(20, 20, 20) 0%, rgb(21, 21, 21) 0%, rgb(28, 28, 28) 0%, rgba(17,17,17,1) 0%, rgb(17, 17, 17) 0%, rgb(25, 25, 25) 4%, rgba(28,28,28,1) 45%, rgba(0,0,0,1) 100%);
+    border-radius: 5px;
+    border: solid rgb(79, 76, 76) 2px;
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    max-width: 90%;
+    font-size: 1rem;
+    box-sizing: border-box;
 }
 @media (min-width: 601px) and (max-width: 991px){
     .Imagenes, .ImagenesInferior {
