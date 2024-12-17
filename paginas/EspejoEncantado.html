@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phasmophobia</title>
+<link rel="stylesheet" href="../css/estilos.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Condensed:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav id="BarraNavegacionSup">
+    <ul class="Barrasuperior">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="./similares.html" target="_blank">Similares</a></li>
+    <li><a href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">En Steam</a></li>
+    <li><a href="./requisitos.html">Requisitos</a></li>
+    <li><a href="./comentarios.html">Comentarios</a></li>
+    <li><a href="./carrito.html"><i class="fa-solid fa-cart-shopping" style="color: white;"></i></a></li>
+    </ul>
+</nav>
+<Header class="Titulo">PHASMOPHOBIA</Header>
+<h1 class="Subtitulo">Espejo Encantado</h1>
+<div id="carrusel">
+    <div class="imagenes">
+    <img src="#" alt="">
+    <img src="#" alt="">
+    <img src="#" alt="">
+    <img src="#" alt="">
+    </div>
+    <button class="boton prev">&lt;</button>
+    <button class="boton next">&gt;</button>
+</div>
+<h3 class="Buscador">
+    <ul>
+        <nav>
+            <li><a href="fantasmas.html">Fantasmas</a></li>
+            <li><a href="objetos.html">Objetos</a></li>
+            <li><a href="mapas.html">Mapas</a></li>
+            <li><a href="notasdelparche.html">Notas del Parche</a></li>
+            <li><a href="guias.html">Guias</a></li>
+        </nav>
+    </ul>
+</h3>
+<h4 class="Subtitulo">Suerte en la caceria</h4>
+<footer>
+    <div class="Button">
+        <a href="#BarraNavegacionSup" class="Boton">Ir Arriba</a>
+    </div>
+</footer>
+<script>
+const carrusel = document.querySelector('#carrusel .imagenes');
+const images = document.querySelectorAll('#carrusel .imagenes img');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+let currentIndex = 0;
+function getVisibleSlides() {
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 600) return 1;
+    if (screenWidth <= 991) return 2;
+    return 3;
+}
+function showSlide(index) {
+    const slideWidth = images[0].clientWidth + 10;
+    carrusel.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+prevButton.addEventListener('click', () => {
+    const visibleSlides = getVisibleSlides();
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - visibleSlides;
+    showSlide(currentIndex);
+});
+nextButton.addEventListener('click', () => {
+    const visibleSlides = getVisibleSlides();
+    currentIndex = (currentIndex < images.length - visibleSlides) ? currentIndex + 1 : 0;
+    showSlide(currentIndex);
+});
+window.addEventListener('resize', () => showSlide(currentIndex));
+</script>
+<script src="https://kit.fontawesome.com/9bd22f1383.js" crossorigin="anonymous"></script>
+</body>
+</html>

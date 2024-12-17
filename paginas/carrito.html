@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmophobia</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Condensed:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="BarraNavegacionSup">
+        <ul class="Barrasuperior">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./similares.html" target="_blank">Similares</a></li>
+            <li><a href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">En Steam</a></li>
+            <li><a href="./requisitos.html">Requisitos</a></li>
+            <li><a href="./comentarios.html">Comentarios</a></li>
+        </ul>
+    </nav>
+<Header class="Titulo">PHASMOPHOBIA</Header>
+<h1 class="Subtitulo">Tienda</h1>
+<div id="productos">
+    <div class="producto">
+        <img src="../img/producto-remerahombre.jpg" alt="Remerahombre" class="ImagenesProductos">
+        <span>Remera - $10.000</span>
+        <button onclick="agregarAlCarrito('Remera', 10000, 'Remera')">Agregar</button>
+    </div>
+    <div class="producto">
+        <img src="../img/producto-taza.jpg" alt="TazaPhasmophobia" class="ImagenesProductos">
+        <span>Taza - $5.000</span>
+        <button onclick="agregarAlCarrito('Taza', 5000, 'Taza')">Agregar</button>
+    </div>
+    <div class="producto">
+        <img src="../img/producto-fundacelular.jpg" alt="CarcazaCelular" class="ImagenesProductos">
+        <span>Carcaza Celular- $2.500</span>
+        <button onclick="agregarAlCarrito('Carcaza', 2500, 'Carcaza')">Agregar</button>
+    </div>
+    <div class="producto">
+        <img src="../img/producto-buzo.jpg" alt="Buzo" class="ImagenesProductos">
+        <span>Buzo - $20.000</span>
+        <button onclick="agregarAlCarrito('Buzo', 20000, 'Buzo')">Agregar</button>
+    </div>
+</div>
+<div id="carrito">
+    <h2 class="Subtitulo">Carrito de Compras</h2>
+    <ul id="lista-carrito" class=""></ul>
+    <p class="Subtitulo">Subtotal: $<span id="subtotal-carrito">0</span></p>
+    <p class="Subtitulo">Descuento: $<span id="descuento-carrito">0</span></p>
+    <p class="Subtitulo">IVA (21%): $<span id="iva-carrito">0</span></p>
+    <p class="Subtitulo"><strong>Total: $<span id="total-carrito">0</span></strong></p>
+    <button onclick="vaciarCarrito()" class="BotonObjetos">Vaciar Carrito</button>
+    <button onclick="mostrarCheckout()" class="BotonObjetos">Checkout</button>
+</div>
+<div id="checkout-modal" style="font-family: 'Cutive Mono', monospace">
+    <div class="checkout-content">
+        <h2>Finalizar Compra</h2>
+        <p>Subtotal: $<span id="modal-subtotal">0</span></p>
+        <p>Descuento: $<span id="modal-descuento">0</span></p>
+        <p>IVA: $<span id="modal-iva">0</span></p>
+        <p><strong>Total a Pagar: $<span id="modal-total">0</span></strong></p>
+        <button onclick="realizarCompra()" class="BotonObjetos">Confirmar Compra</button>
+        <button onclick="cerrarCheckout()" class="BotonObjetos">Cancelar</button>
+    </div>
+</div>
+<footer>
+    <div class="Button">
+        <a href="#BarraNavegacionSup" class="Boton">Ir Arriba</a>
+    </div>
+</footer>
+<script src="../js/carrito.js"></script>
+</body>
+</html>
