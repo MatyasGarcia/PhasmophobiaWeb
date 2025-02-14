@@ -45,10 +45,11 @@
             <li><a href="#" onclick="mostrarFantasma('Gemelos')">Gemelos</a></li>
             <li><a href="#" onclick="mostrarFantasma('Raiju')">Raiju</a></li>
             <li><a href="#" onclick="mostrarFantasma('Obake')">Obake</a></li>
-            <li><a href="#" onclick="mostrarFantasma('Mimico')">Mimico</a></li>
+            <li><a href="#" onclick="mostrarFantasma('Mímico')">Mímico</a></li>
             <li><a href="#" onclick="mostrarFantasma('Moroi')">Moroi</a></li>
             <li><a href="#" onclick="mostrarFantasma('Deogen')">Deogen</a></li>
             <li><a href="#" onclick="mostrarFantasma('Thaye')">Thaye</a></li>
+            <li><a href="#" onclick="mostrarFantasma('???')">???</a></li>
         </ul>
     </div>
     <div class="DescripcionFantasmas">
@@ -159,6 +160,41 @@ const fantasmas = {
         descripcion: "El Onryo suele ser conocido como 'el espiritu furioso'. Roba las almas de los cuerpos de sus victimas en busqueda de venganza. Se conoce que este fantasma teme a cualquier tipo de fuego, y hará lo imposible para estar lejos de él.",
         fortaleza: "Fortaleza: Apagar una llama puede provocar que el onryo ataque.",
         debilidad: "Debilidad: Si se siente amenazado, atacará con menos frecuencia."
+    },
+    Gemelos : {
+        descripcion: "Hay reportes que indican que estos fantasmas imitan las acciones del otro. Alternan sus ataques para confundir a su presa.",
+        fortaleza: "Fortaleza: Cada uno de los gemelos puede enfadarse e iniciar un ataque sobre su presa.",
+        debilidad: "Debilidad: Suelen interactuar con el entorno al mismo tiempo."
+    },
+    Raiju : {
+        descripcion: "Un Raiju es un demonio que se nutre de la corriente eléctrica. Normalmente es tranquilo pero se puede descontrolar si absorbe demasiado poder.",
+        fortaleza: "Fortaleza: Obtiene su poder de los dispositivos electricos cercanos haciendo que se mueva mas rapido.",
+        debilidad: "Debilidad: Debido a que siempre interfiere con los aparatos electornicos es facil de rastrear cuando ataca."
+    },
+    Obake : {
+        descripcion: "Los Obakes son cambiaformas terroríficos, y por ello son capaces de adquirir muchas apariencias. Han sido vistos adoptando forma humanoide para atacar a su presa.",
+        fortaleza: "Fortaleza: Cuando interactúan con el entorno rara vez dejarán rastro.",
+        debilidad: "Debilidad: A veces cambiarán de forma revelando asi pruebas indispensables."
+    },
+    Mímico : {
+        descripcion: "El Mímico es un fantasma elusivo, misterioso e imitador que copia rasgos y comportamientos de los demás incluyendo otros tipos de fantasma.",
+        fortaleza: "Fortaleza: No estamos seguros de lo que es capaz. Ten cuidado.",
+        debilidad: "Debilidad: Muchos reportes indican orbes espectrales cerca de ellos."
+    },
+    Moroi : {
+        descripcion: "Los Moroi emergen de sus tumbas para robar la energia de los vivos. Se dice que maldicen a sus victimas, quienes solo podrán liberarse de su maldición a través de antidotos o mudándose muy lejos.",
+        fortaleza: "Fortaleza: Cuanto más débil sea su victima más fuerte será el Moroi.",
+        debilidad: "Debilidad: Los Moroi padecen hiperosmia, lo cual los debilita durante un buen rato."
+    },
+    Deogen : {
+        descripcion: "En ocasiones envueltos por una niebla eterna, los Deogen llevan evadiendo a los cazadores de fantasmas durante años. Hay reportes que acusan a estos fantasmas de haber encontrado incluso a las presas más ocultas, justo antes de acécharles hasta la extenuación.",
+        fortaleza: "Fortaleza: Perciben a los vivos constantemente. Podrás huir, pero no podrás esconderte.",
+        debilidad: "Debilidad: Utilizan mucha energía para manifestarse, haciendo que se desplacen muy despacio al estar cerca de sus víctimas."
+    },
+    Thaye : {
+        descripcion: "Se dice que los Thaye envejecen muy rápido, incluso en el más allá. Por lo que sabemos, parece que empeoran más rapido si hay vivos cerca de ellos",
+        fortaleza: "Fortaleza: Conforme entres en la ubicación, se volverán activos, defensivos y ágiles.",
+        debilidad: "Debilidad: Se debilitan con el tiempo, tornándose más vulnerables, más lentos y menos agresivos."
     },
 };
 function mostrarFantasma(nombre) {

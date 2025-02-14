@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,11 @@
   <link rel="stylesheet" href="../css/estilos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Condensed:ital,wght@0,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Condensed:ital,wght@0,300;1,400;1,700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <nav id="BarraNavegacionSup">
     <ul class="Barrasuperior">
@@ -23,6 +27,9 @@
   </nav>
   <Header class="Titulo">PHASMOPHOBIA</Header>
   <h1 class="Subtitulo">Tablero Ouija</h1>
+  <article class="Descripcion">La forma más común de invocar accidentalmente a un fantasma es con una Tabla Ouija, por
+    lo que es posible que te encuentres con ellas durante tus investigaciones. Ten cuidado si decides usarla, ya que se
+    sabe que pueden acabar con tu cordura. Para usar una, actívala y luego haz una pregunta con la voz</article>
   <div id="carrusel">
     <div class="imagenes">
       <img src="../img/Ouija ejemplo.jpg" alt="Ouija ejemplo">
@@ -33,51 +40,166 @@
     <button class="boton prev">&lt;</button>
     <button class="boton next">&gt;</button>
   </div>
+  <div>
+    <table class="tabla-contenido">
+      <caption class="Descripcion">Preguntas a la Tabla Ouija</caption>
+      <tbody>
+        <tr>
+          <th>Categoria</th>
+          <th>Descripcion</th>
+          <th>Pregunta</th>
+          <th>Respuesta</th>
+          <th>Coste de cordura</th>
+        </tr>
+        <tr>
+          <td>Ubicacion</td>
+          <td>Devuelve la habitación en la que se encuentra actualmente el fantasma. Esto no responde a la habitación
+            favorita, no importa cómo se exprese, a menos que el fantasma esté actualmente allí.</td>
+          <td>«¿Dónde estás?»<br>«¿Cuál es tu habitación favorita?»<br>«¿Dónde está tu habitación?»<br>«¿Cuál es tu habitación?»</td>
+          <td>Nombre de la habitación</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Ubicacion (No Especifica)</td>
+          <td>En lugar de proporcionar la habitación actual del fantasma, esto simplemente responde si el fantasma está
+            en la misma habitación que la persona que hace la pregunta.</td>
+          <td>«¿Estás aquí?»<br>«¿Estás cerca?»</td>
+          <td>Si / No</td>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <td>Localizacion del hueso</td>
+          <td>Se indicará el nombre de la sala en la que se encuentra el hueso.
+            Actualmente existe un problema conocido por el que esta pregunta puede no funcionar.</td>
+          <td>«¿Dónde está el hueso?»<br>«¿Dónde moriste?»<br>«¿Dónde está tu cuerpo?»</td>
+          <td>Nombre de la habitación</td>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <td>Jugar al Escondite</td>
+          <td>La ouija iniciará una cuenta atrás de 5 a 0, antes de romperse e iniciar una caceria maldita.</td>
+          <td>«¿Quieres jugar al escondite?»</td>
+          <td>Cuenta atrás de 5 a 0.</td>
+          <td>Sin coste.</td>
+        </tr>
+        <tr>
+          <td>Edad</td>
+          <td>La edad del fantasma es un número generado aleatoriamente entre 10 y 90 años que está predeterminado al
+            inicio del nivel.
+            Si el fantasma es un Thaye, su edad comenzará dentro de este rango, pero puede superarlo tras envejecer.
+          </td>
+          <td>«¿Cuántos años tienes?»<br>«¿Qué edad tienes?»<br>«¿Eres viejo?»<br>«¿Eres joven?»</td>
+          <td>10 - 90</td>
+          <td>5%</td>
+        </tr>
+        <tr>
+          <td>Muerte</td>
+          <td>La duración de la muerte de un fantasma es un número generado aleatoriamente entre 50 y 1000 años que está
+            predeterminado al inicio del nivel.</td>
+          <td>«¿Cuánto tiempo llevas muerto?»<br>«¿Cuántos años hace que moriste?»<br>«¿Cuánto tiempo llevas aquí?»<br>«¿Cuánto hace que moriste?»<br>«¿Cuándo moriste?»</td>
+          <td>50 - 1000</td>
+          <td>5%</td>
+        </tr>
+        <tr>
+          <tr>
+            <td rowspan="3">Cordura</td> 
+            <td rowspan="3">Estas preguntas pueden dar al jugador una estimación aproximada de su nivel de cordura actual. Esto es
+              especialmente útil en mapas grandes o en dificultad Pesadilla donde el Monitor de Cordura no estará
+              disponible. Todas las respuestas se refieren a la cordura del jugador una vez deducida su cordura.</td>
+            <td>«¿Cuál es mi cordura?»<br>«¿Qué tan cuerdo estoy?»</td>
+            <td>80% - Saludable<br>60% - 80% Bueno<br>40% - 60%: Medio<br>20% - 40%: Malo<br>20% - Horrible</td>
+            <td rowspan="3">5%</td> 
+          </tr>
+          <tr>
+            <td>«¿Qué tan loco estoy?»<br>«¿Cómo de loco estoy?»</td>
+            <td>50%: Poco<br>25% - 50%: Muy<br>25%: Loco</td>
+          </tr>
+          <tr>
+            <td>«¿Estoy loco?»</td>
+            <td>90%: No<br>20% - 90%: Tal vez<br>20%: Si</td>
+          </tr>
+        </tr>
+        <tr>
+          <td>Proposito</td>
+          <td>Estas preguntas indican al jugador por qué está presente el fantasma.</td>
+          <td>«¿Por qué estás aquí?»<br>«¿Qué quieres?»</td>
+          <td>Odio<br>Matar<br>Solitario<br>Perdido<br>Amor<br>Paz<br>Venganza<br>Asustado<br>Atrapado<br>Venganza<br>Usted</td>
+          <td>5%</td>
+        </tr>
+        <tr>
+          <td>Broma</td>
+          <td>Algunas bromas pueden usarse con el fantasma, cada una de las cuales da lugar a que el fantasma dé una
+            respuesta específica en relación con la broma</td>
+          <td>Toc Toc</td>
+          <td>¿Quien esta ahi?</td>
+          <td>5%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="Descripcion">*Existen muchas otras preguntas pero estas son las que arrojan mas pistas al jugador sobre el
+    tipo de fantasma con el que se enfrenta.*</p>
+  <h2 class="Subtitulo">Consejos</h2>
+  <article class="Descripcion">
+    <ul class="Barrasuperior">
+      <p>Romper la ouija puede ser útil para completar varios objetivos relacionados con la caza o para obtener
+        recompensas fotográficas sacando una foto del fantasma.</p>
+      <p>Puedes disminuir tu cordura (y, por extensión, la cordura media de tu equipo) de forma rápida y precisa
+        haciendo preguntas de drenaje de cordura del 5% con la ouija repetidamente, incluso mientras está en medio de
+        responder a otra pregunta; esto puede ser útil para probar los umbrales de cordura de la caza.</p>
+      <p>Se pueden hacer repetidamente preguntas de bajo coste con la Ouija para crear numerosas interacciones; con un
+        Lector EMF cerca, se puede alcanzar rápidamente el nivel 5 de lectura EMF, ya que cada pregunta tiene 1/4 de
+        probabilidad de emitir la evidencia.</p>
+      <p>Cuando utilices el chat de voz para hacer preguntas, espera al menos unos segundos a que el tablero responda
+        antes de volver a preguntar, para evitar romper el tablero al hacer preguntas que resten mucha cordura.</p>
+    </ul>
+  </article>
   <h3 class="Buscador">
     <ul>
-        <nav>
-            <li><a href="fantasmas.html">Fantasmas</a></li>
-            <li><a href="objetos.html">Objetos</a></li>
-            <li><a href="mapas.html">Mapas</a></li>
-            <li><a href="notasdelparche.html">Notas del Parche</a></li>
-            <li><a href="guias.html">Guias</a></li>
-        </nav>
+      <nav>
+        <li><a href="fantasmas.html">Fantasmas</a></li>
+        <li><a href="objetos.html">Objetos</a></li>
+        <li><a href="mapas.html">Mapas</a></li>
+        <li><a href="notasdelparche.html">Notas del Parche</a></li>
+        <li><a href="guias.html">Guias</a></li>
+      </nav>
     </ul>
-</h3>
-<h4 class="Subtitulo">Suerte en la caceria</h4>
-<footer>
+  </h3>
+  <h4 class="Subtitulo">Suerte en la caceria</h4>
+  <footer>
     <div class="Button">
-        <a href="#BarraNavegacionSup" class="Boton">Ir Arriba</a>
+      <a href="#BarraNavegacionSup" class="Boton">Ir Arriba</a>
     </div>
-</footer>
-<script>
-const carrusel = document.querySelector('#carrusel .imagenes');
-const images = document.querySelectorAll('#carrusel .imagenes img');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-let currentIndex = 0;
-function getVisibleSlides() {
-  const screenWidth = window.innerWidth;
-  if (screenWidth <= 600) return 1;
-  if (screenWidth <= 991) return 2;
-  return 3;
-}
-function showSlide(index) {
-  const slideWidth = images[0].clientWidth + 10;
-  carrusel.style.transform = `translateX(-${index * slideWidth}px)`;
-}
-prevButton.addEventListener('click', () => {
-  const visibleSlides = getVisibleSlides();
-  currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - visibleSlides;
-  showSlide(currentIndex);
-});
-nextButton.addEventListener('click', () => {
-  const visibleSlides = getVisibleSlides();
-  currentIndex = (currentIndex < images.length - visibleSlides) ? currentIndex + 1 : 0;
-  showSlide(currentIndex);
-});
-window.addEventListener('resize', () => showSlide(currentIndex));
-</script>
-<script src="https://kit.fontawesome.com/9bd22f1383.js" crossorigin="anonymous"></script>
+  </footer>
+  <script>
+    const carrusel = document.querySelector('#carrusel .imagenes');
+    const images = document.querySelectorAll('#carrusel .imagenes img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentIndex = 0;
+    function getVisibleSlides() {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 600) return 1;
+      if (screenWidth <= 991) return 2;
+      return 3;
+    }
+    function showSlide(index) {
+      const slideWidth = images[0].clientWidth + 10;
+      carrusel.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+    prevButton.addEventListener('click', () => {
+      const visibleSlides = getVisibleSlides();
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - visibleSlides;
+      showSlide(currentIndex);
+    });
+    nextButton.addEventListener('click', () => {
+      const visibleSlides = getVisibleSlides();
+      currentIndex = (currentIndex < images.length - visibleSlides) ? currentIndex + 1 : 0;
+      showSlide(currentIndex);
+    });
+    window.addEventListener('resize', () => showSlide(currentIndex));
+  </script>
+  <script src="https://kit.fontawesome.com/9bd22f1383.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

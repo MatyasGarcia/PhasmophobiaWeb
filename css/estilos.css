@@ -301,6 +301,39 @@ a:hover {
     border-radius: 8px;
     object-fit: contain;
 }
+.tabla-contenido {
+    width: 80%; /* Reducir ancho */
+    max-width: 800px; /* Limitar tamaño máximo */
+    margin: 20px auto; /* Centrar tabla */
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+    border: 2px solid #4CAF50;
+    background-color: #f8fff0; /* Color de fondo para evitar zonas negras */
+}
+.tabla-contenido th, .tabla-contenido td {
+    border: 1px solid #4CAF50;
+    padding: 10px;
+}
+.tabla-contenido th {
+    background-color: #4CAF50;
+    color: white;
+}
+.tabla-contenido tr:nth-child(even) {
+    background-color: #e8f5e9; /* Color para filas pares */
+}
+.tabla-contenido tr:nth-child(odd) {
+    background-color: #ffffff; /* Fondo blanco para filas impares */
+}
+/* Mejorar la visibilidad del texto en todas las celdas */
+.tabla-contenido td {
+    color: #000; /* Asegura que el texto sea negro */
+}
+/* Estilos para la versión compacta */
+.tabla-contenido.compacta {
+    font-size: 12px;
+    width: 60%;
+}
 @media (min-width: 601px) and (max-width: 991px){
     .Imagenes, .ImagenesInferior {
         display: flex;
